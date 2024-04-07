@@ -39,7 +39,7 @@ const Dashboard = () => {
   return (
     <div>
       <Profile />
-      <Cards cardObj={cardObj} onChange={onChange} date={date} />
+      <Cards cardObj={cardObj} onChange={onChange} data={date} />
       <ProgressChart chartData={chartData} />
     </div>
   );

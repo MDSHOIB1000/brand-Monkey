@@ -2,7 +2,7 @@ import React from 'react'
 import { LiaFileSignatureSolid } from 'react-icons/lia'
 import Calendar from "react-calendar";
 import "../../../../assets/style/style.css"
-function CardR({onChange,date}) {
+function CardR({onChange,data}) {
     return (
         <div className="w-full lg:w-1/3 lg:ml-8 mt-8 lg:mt-0">
             <div className="text-white border border-[#ffff006a] rounded-3xl p-6 bg-gradient-to-r from-[#4745457b] to-[#201f2159] mb-6">
@@ -23,7 +23,7 @@ function CardR({onChange,date}) {
                 </div>
             </div>
             <div className="border border-[#ffff006a] rounded-3xl p-6 bg-gradient-to-r from-[#4745457b] to-[#201f2159]">
-                <Calendar className="w-full" onChange={onChange} value={date} />
+                <Calendar className="w-full" onChange={onChange} value={data} />
             </div>
         </div>
     )
